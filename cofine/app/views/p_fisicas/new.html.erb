@@ -1,0 +1,145 @@
+<legend>Crea un Nuevo Cliente</legend>
+<%= form_for @p_fisica, :html => {:class => "form-horizontal"} do |form| %>
+		<div class="control-group">
+			<div class="control-label">
+				<%= form.label :nombre %>
+			</div>
+			<div class="controls">
+			<%= form.text_field :nombre %>
+			</div>
+		</div>
+
+		<div class="control-group">
+			<div class="control-label">
+				<%= form.label :apellido_paterno %>
+			</div>
+			<div class="controls">
+			<%= form.text_field :apellido_paterno %>
+			</div>
+		</div>
+
+		<div class="control-group">
+			<div class="control-label">
+				<%= form.label :apellido_materno %>
+			</div>
+			<div class="controls">
+			<%= form.text_field :apellido_materno %>
+			</div>
+		</div>
+
+		<div class="control-group">
+			<div class="control-label">
+				<%= form.label :genero %>
+			</div>
+			<div class="controls">
+			<%= form.text_field :genero %>
+			</div>
+		</div>
+
+		<div class="control-group">
+			<div class="control-label">
+				<%= form.label :nacimiento %>
+			</div>
+			<div class="controls">
+			<%= form.date_select :nacimiento %>
+			</div>
+		</div>
+
+		<div class="control-group">
+			<div class="control-label">
+				<%= form.label :pais %>
+			</div>
+			<div class="controls">
+			<%= form.text_field :pais %>
+			</div>
+		</div>
+		<div class="control-group">
+			<div class="control-label">
+				<%= form.label :estado %>
+			</div>
+			<div class="controls">
+			<%= form.text_field :estado %>
+			</div>
+		</div>
+
+		<div class="control-group">
+			<div class="control-label">
+				<%= form.label :nacionalidad %>
+			</div>
+			<div class="controls">
+			<%= form.number_field :nacionalidad %>
+			</div>
+		</div>
+
+		<div class="control-group">
+			<div class="control-label">
+				<%= form.label :ocupacion %>
+			</div>
+			<div class="controls">
+			<%= form.text_field :ocupacion %>
+			</div>
+		</div>
+
+		<div class="control-group">
+			<div class="control-label">
+				<%= form.label :domicilio_id %>
+			</div>
+			<div class="controls">
+			<%= form.number_field :domicilio_id %>
+			</div>
+		</div>
+
+		<div class="control-group">
+			<div class="control-label">
+				<%= form.label :telefono %>
+			</div>
+			<div class="controls">
+			<%= form.text_field :telefono %>
+			</div>
+		</div>
+
+		<div class="control-group">
+			<div class="control-label">
+				<%= form.label :mail %>
+			</div>
+			<div class="controls">
+			<%= form.text_field :mail %>
+			</div>
+		</div>
+
+		<div class="control-group">
+			<div class="control-label">
+				<%= form.label :curp %>
+			</div>
+			<div class="controls">
+			<%= form.text_field :curp %>
+			</div>
+		</div>
+
+		<div class="control-group">
+			<div class="control-label">
+				<%= form.label :rfc %>
+			</div>
+			<div class="controls">
+			<%= form.text_field :rfc %>
+			</div>
+		</div>
+
+		<div class="control-group">
+			<div class="control-label">
+				<%= form.label :fiel %>
+			</div>
+			<div class="controls">
+			<%= form.text_field :fiel %>
+			</div>
+		</div>
+
+	<div class="control-group">
+		<div class="controls">
+			<%= form.submit "Crear", :class => "btn btn-primary"%>
+		</div>
+	</div>
+<% end %>
+
+
+

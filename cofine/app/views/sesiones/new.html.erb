@@ -1,0 +1,32 @@
+<!-- Forma para el Login -->
+<div class="text-center">
+	<h1>Iniciar Sesión</h1>
+</br></br>
+
+	<%= form_for :sesion, :url => sesiones_path, :html => {:class => "form-horizontal"} do |form| %>
+			<div class="control-group">
+				<div class="control-label">
+					<%= form.label :correo %>
+				</div>
+				<div class="controls">
+				<%= form.text_field :mail %>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<div class="control-label">
+					<%= form.label :contraseña %>
+				</div>
+				<div class="controls">
+				<%= form.password_field :password %>
+				</div>
+			</div>
+		<div class="control-group">
+			<div class="controls">
+				<%= form.submit "Entrar", :class => "btn btn-primary"%>
+			</div>
+		</div>
+
+	<% end %>
+
+</div>

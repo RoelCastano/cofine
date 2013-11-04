@@ -1,0 +1,23 @@
+<table id="tabla_de_alta" border="1" cellpadding= "5" width = "100%">
+	<!-- etiquetas de los campos -->
+	<tr>
+		<th> Nombre </th>
+		<th> Correo </th>
+		<th> Alta </th>
+	</tr>
+	<!-- ciclo que va por todos los empleados de rh -->
+	<% @usuarios.each do |usuario| %> 
+		<tr>
+			<!-- imprimiendo el nombre -->
+			<td><%= link_to usuario.nombre_completo.titleize, edit_usuario_path(usuario) %></td> 
+			<td><%= usuario.mail %></td> 
+
+			<!-- con una checkbox para dar de baja/alta al empleado de rh -->
+			<td><%#= check_box_tag("check"+usuario.id.to_s, 'yes', usuario.activo, class: 'boxUsuario', data: {id: usua.id}) %></td>
+		</tr>
+	<% end %>
+</table>
+</br>
+<div class="text-center">
+	<%= button_to "Agregar", new_usuario_path, :method => :get, :class => 'btn btn-large'  %>
+</div>
